@@ -1,0 +1,26 @@
+﻿@model IEnumerable<MVCApplication1.Models.Customer>
+@{
+}
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Salary</th>
+            <th>Phone</th>
+        </tr>
+    </thead>
+    @foreach(var cus in Model)
+    {
+        <tr>
+            <td>@cus.Id</td>
+            <td>@cus.Name</td>
+            <td>@cus.Email</td>
+            <td>@cus.Salary</td>
+            <td>@cus.Phone</td>                   
+        </tr>
+    }
+</table>
